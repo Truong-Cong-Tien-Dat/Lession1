@@ -16,22 +16,18 @@ public class AlertPage {
         this.driver = driver;
     }
 
-    // ===== JS ALERT =====
     public void clickJSAlert(){
         driver.findElement(buttonJSAlert).click();
     }
 
-    // ===== JS CONFIRM =====
     public void clickJSConfirm(){
         driver.findElement(buttonJSConfirm).click();
     }
 
-    // ===== JS PROMPT =====
     public void clickJSPrompt(){
         driver.findElement(buttonJSPrompt).click();
     }
-
-    // ===== ALERT ACTION =====
+    
     public void acceptAlert(){
         driver.switchTo().alert().accept();
     }
@@ -44,7 +40,6 @@ public class AlertPage {
         driver.switchTo().alert().sendKeys(text);
     }
 
-    // ===== RESULT TEXT =====
     public String getResult(){
         return driver.findElement(result).getText();
     }
