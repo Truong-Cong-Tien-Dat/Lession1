@@ -8,13 +8,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import pages.HomePage;
 
 public class BaseTests {
-
     protected WebDriver driver;
     protected HomePage homePage;
-
     @BeforeEach
     public void setUp(){
-
         WebDriverManager.chromedriver().setup();
 
         driver = new ChromeDriver();
